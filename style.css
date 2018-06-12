@@ -8,3 +8,86 @@ p {
     font-family: sans-serif;
     text-decoration: line-through;
 }
+
+/* background-color */
+/* Color names */
+div {
+  /* inherit, initial = set this properties to default value */
+  /* background-color automatic transparant */
+  background-color: red;
+  color: white;
+}
+
+/* use hex color */
+body {
+  background-color: #de1205; /* red */
+}
+
+/* rgb/ rgba */
+header {
+  background-color: rgb(0, 0, 0); /* black */
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.5); /* black with 50% opacity */
+}
+
+/* HSL stands for hue, saturation, and lightness */
+/* Hue is a degree on the color wheel (from 0 to 360).
+Saturation is a percentage between 0% and 100%.
+Lightness is also a percentage between 0% and 100%. */
+li a {
+  background-color: hsl(120, 100%, 50%); /* green */
+}
+
+#p1 {
+  background-color: hsla(120, 100%, 50%, .3); /* green with 30% opacity */
+}
+
+/* Interaction with background-image */
+body {
+  background: red;
+  background-image: url(linxcodev.png);
+  background-position: center; /* for image */
+  background-repeat: no-repeat; /* for image */
+  background-size: 512px; /* for image */
+  /* background: no-repeat center url("somepng.jpg"); alt */
+  /* padding: 0;
+  margin: 0; */
+  /* background-attachment position image scroll or fixed default scroll */
+  background-attachment: fixed;
+}
+/* alt */
+/* body {
+  background: red url(linxcodev.png);
+} */
+
+/* backgroundGradient */
+.linear-gradient {
+  color: white;
+  background: url(linxcodev.png) right bottom no-repeat,  /* set multiple backgr */
+              linear-gradient(to left, red, blue); /* you can also use 270deg */
+}
+
+.diagonal-linear-gradient {
+  background: linear-gradient(to left top, red, yellow 10%);
+}
+
+.linear-gradient-rainbow {
+  background: linear-gradient(to left, red, orange, yellow, green, blue, indigo, violet)
+}
+/* radial-gradient */
+.radial-gradient {
+  background: radial-gradient(red, blue);
+}
+
+.radial-gradient2 {
+background: radial-gradient(circle farthest-corner at top left, red, blue);
+}
+/* Repeating gradients */
+.bullseye {
+  background: repeating-radial-gradient(red, red 10%, white 10%, white 20%);
+}
+.warning {
+  background: repeating-linear-gradient(-45deg, yellow, yellow 10%, black 10%, black 20% );
+}

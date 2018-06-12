@@ -1,0 +1,28 @@
+.backor {
+  padding: 50px;
+  width: 300px;
+  border: 29px solid;
+  background: url(linxcodev.png);
+  background-repeat: no-repeat;
+}
+
+.backor1 {}
+
+.backor2 {
+  background-origin: border-box;
+}
+
+.backor3 {
+  background-origin: content-box;
+}
+
+/* background-blend-mode Property */
+.myDiv {
+  width: 300px;
+  height: 200px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, black 0%,white 100%),
+                    url('linxcodev.png');
+  background-blend-mode:  saturation;
+}
