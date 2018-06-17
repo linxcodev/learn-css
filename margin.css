@@ -1,0 +1,20 @@
+div {
+  border: 1px solid red;
+  margin: 10px;
+  width: 100px;
+  text-align: center;
+}
+
+/* Horizontally center elements on a page using margin */
+/* have pr hal.47 example 1 */
+#myDiv {
+  width:80%;
+  margin:0 auto;
+}
+
+/* negative margins */
+/* Margin is one of a few CSS properties that can be set to negative values */
+#over {
+  display: inline;
+  margin-left: -20px;
+}
