@@ -1,0 +1,22 @@
+/* basic example */
+@media screen and (min-width: 720px) {
+  body {
+    background: skyblue;
+  }
+}
+
+/* mediatype */
+@media print {
+  body {
+    background: white;
+  }
+}
+@media not print {
+  body {
+    color: white;
+    background: green;
+  }
+}
+
+/* if media query not suport with device can use
+js example IE 8 */
