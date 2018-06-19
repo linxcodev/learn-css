@@ -1,0 +1,65 @@
+/* basic usage */
+img {
+  float: left;
+  width: 90px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* clear property */
+img::after {
+  float: left;
+}
+p.clear {
+  clear: both;
+}
+
+/* inline div using float */
+.div1 {
+  width: 50%;
+  float: left;
+  padding:50px 0;
+  background: red;
+  text-align: center;
+}
+.div2 {
+  width: 50%;
+  float: left;
+  padding: 50px 0;
+  background: blue;
+  text-align: center;
+}
+
+/* Simple Two Fixed-Width Column Layout */
+.wrapper {
+  width:600px;
+  padding:20px;
+  background-color:pink;
+  /* Floated elements don't use any height. Adding "overflow:hidden;" forces the
+  parent element to expand to contain its floated children. */
+  overflow: hidden;
+}
+.sidebar {
+  width:150px;
+  float:left;
+  background-color:blue;
+}
+.content {
+  width:450px;
+  float:right;
+  background-color:yellow;
+}
+
+/* Fixed-no-width Column Layout */
+/* use table */
+.sidebar1 {
+/* `display:table;` shrink-wraps the column */
+display:table;
+float:left;
+background-color:blue;
+}
+.content1 {
+/* `overflow:hidden;` prevents `.content` from flowing under `.sidebar` */
+overflow:hidden;
+background-color:yellow;
+}
