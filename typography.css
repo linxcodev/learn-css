@@ -1,0 +1,72 @@
+/* font */
+p {
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-stretch: normal;
+  line-height: normal;
+}
+
+/* quotes */
+q {
+  quotes: "<< " " >>";
+  font: bold 20px;
+  background: blue;
+  color: white;
+  padding: 20px;
+  width: 40px
+}
+
+/* text direction */
+.ex {
+  direction: rtl;
+}
+
+/* text shadow */
+/* Shadow without blur radius */
+.wthr {
+  text-shadow: 2px 2px #0000FF;
+  text-transform: uppercase;
+}
+/* Shadow with blur radius */
+.wtbr {
+  text-shadow: 2px 2px 10px #0000FF;
+  text-transform: capitalize;
+  text-decoration: overline;
+}
+/* Multiple Shadows */
+.ms {
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+  text-transform: lowercase;
+  text-indent: 50px;
+  text-decoration: line-through;
+}
+
+/* letter-spacing */
+h2 {
+  /* adds a 1px space horizontally between each letter;
+  also known as tracking */
+  letter-spacing: 84px;
+}
+
+/* text-indent */
+p {
+  text-indent: 50px
+}
+
+/* text-decoration */
+.title {
+  text-decoration-style: dashed;
+  text-decoration-line: line-through;
+  text-decoration-color: blue;
+}
+
+/* word-spacing */
+.extensive {
+  font-weight: bold;
+  font-size: 20px;
+  word-spacing: 24px;
+  font-variant: small-caps;
+}
