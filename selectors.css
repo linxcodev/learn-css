@@ -1,0 +1,82 @@
+/* attribute selectors */
+[warna] {
+  color: red;
+}
+/* specifik attr */
+[color="red"] {
+  color: red;
+}
+[color*="foo"] {
+  color: red;
+}
+[color~="wred"] {
+  color: red;
+}
+[color^="reed"] {
+  color: red;
+}
+[color$="redk"] {
+  color: red;
+}
+[lang|="EN"] {
+  color: red;
+}
+[lang="EN" i] {
+  color: red;
+}
+
+/* combinators */
+.blue p {
+  color: blue;
+}
+.yellow > p {
+  color: yellow;
+}
+p + p {
+  color: green;
+}
+h4 ~ h4 {
+  color: purple;
+}
+h4 {
+  font-weight: normal;
+}
+
+/* class name selectors */
+.important {
+  color: orange;
+}
+.warning {
+  color: blue;
+}
+.warning.important {
+  color: red;
+}
+
+/* the :last-of-type selectors */
+h1:last-of-type {
+  background: #C5CAE9;
+}
+h2:last-of-type {
+  background: #CDDC39;
+}
+
+/* :in-range selectors */
+input:in-range {
+  border: 1px blue;
+  border-style: dashed;
+}
+
+div::after {
+  height: 80px;
+}
+input {
+  margin:30px;
+}
+div:focus-within {
+  background-color: #1565C0;
+}
+/* pr */
+h6:only-child {
+  color: orange;
+}
