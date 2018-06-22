@@ -1,0 +1,11 @@
+/* centering with flexbox */
+/* horizontal */
+div#cenrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+}
