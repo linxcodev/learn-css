@@ -1,0 +1,45 @@
+/* using rem */
+html {
+  font-size: 16px;
+}
+input[type="button"] {
+  font-size: 1rem; /* = 16px */
+  padding: 0.5em 2em;
+  color: white;
+  font-weight: bold;
+  background-color: blue;
+  border: white;
+}
+input[type="button"]:hover {
+  box-shadow: 0px 0px 5px blue;
+}
+input[type="range"] {
+  font-size: 1rem;
+  width: 10em;
+}
+input[type=text] {
+  font-size: 1rem;
+  padding: 0.5em;
+}
+input[type=text]:focus-within {
+  margin-top: 20px;
+  box-shadow:  0px -3px 3px red;
+}
+.cldiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* using percent */
+*{
+  color: #CCC;
+}
+.parent{
+  background-color: blue;
+  width: 100px;
+}
+.child{
+  background-color: green;
+  width: 50%;
+}
