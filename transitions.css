@@ -1,0 +1,12 @@
+div{
+  width: 150px;
+  height:150px;
+  background-color: skyblue;
+  transition: background-color 1s;
+  /* transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1); pr */
+  /* transition-timing-function: cubic-bezier(0.42, 0.0, 1.0, 1.0) */
+}
+div:hover{
+  background-color: #2e4852;
+  box-shadow: 0px 0px 5px currentColor;
+}
