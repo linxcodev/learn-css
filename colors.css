@@ -1,0 +1,49 @@
+/* currentColor */
+/* with name color */
+div {
+  color: blue;
+  border: 5px solid currentColor;
+  box-shadow: -3px -3px 7px currentColor;
+  width: 200px;
+  padding: 50px;
+}
+
+/* hexadecimal */
+.some-class {
+  /* This is equivalent to using the color keyword 'blue' */
+  color: #0000FF;
+}
+.also-blue {
+  /* If you want to specify each range value with a single number, you can!
+  This is equivalent to '#0000FF' (and 'blue') */
+  color: #00F;
+}
+
+/* rgb */
+.some-class {
+  /* Scalar RGB, equivalent to 'blue'*/
+  color: rgb(0, 0, 255);
+}
+.also-blue {
+  /* Percentile RGB values*/
+  color: rgb(0%, 0%, 100%);
+}
+/* rgba */
+.red {
+  /* Opaque red */
+  color: rgba(255, 0, 0, 1);
+}
+.red-50p {
+  /* Half-translucent red. */
+  color: rgba(255, 0, 0, .5);
+}
+
+/* hsl */
+p {
+  color: hsl(240, 100%, 50%); /* Blue */
+}
+p {
+  color: hsla(240, 100%, 50%, 0),
+         hsla(240, 100%, 50%, 0.5),
+         hsla(240, 100%, 50%, 1)
+}
