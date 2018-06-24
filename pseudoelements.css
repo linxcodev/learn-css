@@ -1,0 +1,31 @@
+div::before {
+  content: 'before';
+  color: green;
+  border: 1px solid currentColor;
+}
+
+div {
+  padding: 1px;
+  color: black;
+  width: 160px;
+  border: 1px solid currentColor;
+}
+
+div::after {
+  content: "after";
+  color: blue;
+  border: 1px solid currentColor;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li:before {
+  content: "";
+  display: inline-block;
+  margin-right: 10px;
+  height: 10px;
+  width: 10px;
+  background: linear-gradient(red, blue);
+}
