@@ -1,0 +1,52 @@
+/* positioning absolute with z-index */
+div {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+}
+div#div1 {
+  z-index: 1;
+  left: 0px;
+  top: 0px;
+  background-color: blue;
+}
+div#div2 {
+  z-index: 3;
+  left: 100px;
+  top: 100px;
+  background-color: green;
+}
+div#div3 {
+  z-index: 2;
+  left: 50px;
+  top: 150px;
+  background-color: red;
+}
+
+/* position fixed */
+#stickyDiv {
+  position: fixed;
+  top:10px;
+  left:10px;
+  background-color: yellow;
+}
+
+/* position relative */
+.relpos {
+  position:relative;
+  top:20px;
+  left:30px;
+  background-color: black;
+}
+
+.relpos1 {
+  position:relative;
+  margin-top:20px;
+  left:20px;
+  background-color: orange;
+}
+
+/* position static (default) */
+.element {
+  position: static;
+}
