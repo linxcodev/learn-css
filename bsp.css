@@ -1,0 +1,23 @@
+/* Browser suport prefixes */
+/* -webkit- Google Chrome, Safari, newer versions of Opera 12 and up, Android, Blackberry and UC browsers */
+/* -moz- Mozilla Firefox */
+/* -ms- Internet Explorer, Edge */
+/* -o- Opera until version 12 */
+/* , -xv- -khtml- Konquerer */
+
+/* transform */
+div {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* transitions */
+div {
+  -webkit-transition: all 4s ease;
+  -moz-transition: all 4s ease;
+  -o-transition: all 4s ease;
+  transition: all 4s ease;
+}
