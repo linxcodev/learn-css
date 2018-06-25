@@ -7,7 +7,7 @@
       body {
         cursor: help;
         /* disabled cursor help */
-        pointer-events: none;
+        /* pointer-events: none; */
       }
       #example {
         caret-color: red;
@@ -35,6 +35,46 @@
         -moz-box-shadow: 0px 0px 8px 2px #444444;
         box-shadow: 0px 0px 8px 2px #444444;
       }
+
+      /* usinf variable */
+      :root {
+        --red: #b00;
+        --blue: #4679bd;
+        --grey: #ddd;
+      }
+      .Bx1 {
+        color: var(--red);
+        background: var(--grey);
+        border: 1px solid var(--red);
+      }
+
+      .button {
+        --color: green;
+        padding: .5rem;
+        border: 1px solid var(--color);
+        color: var(--color);
+      }
+      .button:hover {
+        --color: blue;
+      }
+      .button {
+        --color : red;
+      }
+      /* Invalid - CSS doesn't support concatenation*/
+      .logo{
+        --logo-url: 'logo';
+        background: url('assets/img/' var(--logo-url) '.png');
+      }
+      /* Invalid - CSS bug */
+      .logo{
+        --logo-url: 'assets/img/logo.png';
+        background: url(var(--logo-url));
+      }
+      /* Valid */
+      .logo{
+        --logo-url: url('assets/img/logo.png');
+        background: var(--logo-url);
+      }
     </style>
   </head>
   <body>
@@ -43,5 +83,9 @@
     </div>
     <input type="text" id="example" placeholder="Enter ...">
     <div class="box_shadow"></div>
+    <div class="Bx1">
+      Text Here...
+    </div>
+    <input type="button" class="button" value="Button">
   </body>
 </html>
