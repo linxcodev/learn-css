@@ -1,0 +1,24 @@
+/* table-layout */
+/* default */
+.layout-auto {
+  table-layout: auto;
+  border-spacing: 10px;
+  width: 150px;
+  caption-side: top;
+}
+.layout-fixed {
+  table-layout: fixed;
+  width: 150px;
+  caption-side: bottom; /* caption-side */
+  margin-bottom: 40px;
+}
+
+/* empety cell */
+/* default */
+.cell-show {
+  empty-cells: show;
+}
+.cell-hide {
+  empty-cells: hide;
+  border-collapse: collapse; /* border-collapse */
+}
