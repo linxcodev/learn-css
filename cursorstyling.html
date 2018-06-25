@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cursor Styling</title>
+    <style media="screen">
+      body {
+        cursor: help;
+        /* disabled cursor help */
+        pointer-events: none;
+      }
+      #example {
+        caret-color: red;
+      }
+
+      /* inner shadow */
+      .box_shadow {
+        background-color: #1C90F3;
+        width: 200px;
+        height: 100px;
+        margin: 50px;
+        box-shadow: inset 0px 0px 8px 0px #444444;
+      }
+
+      .box_shadow:after {
+        content: "";
+        width: 190px;
+        height: 1px;
+        margin-top: 98px;
+        margin-left: 5px;
+        display: block;
+        position: absolute;
+        z-index: -1;
+        -webkit-box-shadow: 0px 0px 8px 2px #444444;
+        -moz-box-shadow: 0px 0px 8px 2px #444444;
+        box-shadow: 0px 0px 8px 2px #444444;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="disabled">
+      pointer none
+    </div>
+    <input type="text" id="example" placeholder="Enter ...">
+    <div class="box_shadow"></div>
+  </body>
+</html>
