@@ -1,0 +1,16 @@
+img {
+  filter: blur(1px);
+  width: 200px;
+}
+
+p {
+  filter: drop-shadow(1px 1px 1px blue);
+}
+
+.hue-rotate {
+  filter: hue-rotate(120deg);
+}
+
+.invert {
+  filter: invert(100%);
+}
